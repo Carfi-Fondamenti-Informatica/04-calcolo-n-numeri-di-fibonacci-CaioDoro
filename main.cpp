@@ -1,6 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-   return 0;
+int fibonacci (int num)
+{
+    if (num <= 1)
+        return num;
+    return fibonacci(num-1) + fibonacci (num-2);
+}
+
+int main()
+{
+    int num;
+    cin>> num;
+    if (num<2) {
+        cout << "errore" << endl;
+    } else {
+    for (int a =1; a < num; a++)
+    {
+        cout<<fibonacci(a)<<endl;;
+    }}
+    return 0;
 }
