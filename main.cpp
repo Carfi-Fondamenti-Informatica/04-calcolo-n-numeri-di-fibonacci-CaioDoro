@@ -15,9 +15,9 @@ int main()
     if (num<2) {
         cout << "errore" << endl;
     } else {
-    for (int a =1; a < num; a++)
-    {
-        cout<<fibonacci(a)<<endl;;
-    }}
+        for (int a =1; a <= num; a++)
+        {
+            cout<<fibonacci(a)<<endl;
+        }}
     return 0;
 }
